@@ -64,16 +64,16 @@ functions:
     handler: handler.hello
   surpriseAssist:
     handler: handler.surpriseAssist
+    events:
+      - http:
+          path: reservations
+          method: get
+  foo:
+    handler: handler.foo
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-    events:
-     - http:
-          path: reservations/
-          method: get
-
-          
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic
