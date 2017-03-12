@@ -1,0 +1,24 @@
+{
+  "name": "surprise-assist-services",
+  "version": "1.0.0",
+  "description": "this is for reactathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reactathon2017-Masv/SurpriseAssist-Backend.git"
+  },
+  "author": "masv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reactathon2017-Masv/SurpriseAssist-Backend/issues"
+  },
+  "homepage": "https://github.com/Reactathon2017-Masv/SurpriseAssist-Backend#readme",
+  "dependencies": {
+    "aws-sdk": "^2.27.0",
+    "axios": "^0.15.3",
+    "lodash": "^4.17.4"
+  }
+}
