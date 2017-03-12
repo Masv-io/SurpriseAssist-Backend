@@ -19,6 +19,7 @@
   "dependencies": {
     "aws-sdk": "^2.27.0",
     "axios": "^0.15.3",
+    "googleplaces": "^0.6.1",
     "lodash": "^4.17.4"
   },
   "devDependencies": {

@@ -1,0 +1,3 @@
+[submodule "lib/landmark"]
+	path = lib/landmark
+	url = https://github.com/Reactathon2017-Masv/landmark
