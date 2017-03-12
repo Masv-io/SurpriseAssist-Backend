@@ -34,6 +34,26 @@ module.exports.surpriseAssist = (event, context, cb) => {
           
         };
         cb(null, response.body);
-    })
+    });
+
+    surprises.currentReservations(event, context).then(result=>{
+        console.log(result);
+        const response = {
+          statusCode: 200,
+          body: JSON.stringify(result),
+          
+        };
+        cb(null, response.body);
+    });
+
+    surprises.updateReservations(event, context).then(result=>{
+        console.log(result);
+        const response = {
+          statusCode: 200,
+          body: JSON.stringify(result),
+          
+        };
+        cb(null, response.body);
+    });
     
 };

@@ -20,17 +20,15 @@ function getAllReservations() {
 }
 
 function updateReservations() {
-    axios.get('https://platform.otqa.com/availability?latitude=42.360082&longitude=71.058880&party_size=10&radius=200&forward_minutes=180&backward_minutes=30&start_date_time=2017-03-13T20%3A00&include_unavailable=true', config)
+    return axios.get('https://platform.otqa.com/availability?latitude=42.360082&longitude=71.058880&party_size=10&radius=200&forward_minutes=180&backward_minutes=30&start_date_time=2017-03-13T20%3A00&include_unavailable=true', config)
         .then(function(response){
-            console.log(response.data); // ex.: { user: 'Your User'}
-            console.log(response.status); // ex.: 200
+            return response.data;
           }); 
 }
 function currentReservations() {
-    axios.get('https://platform.otqa.com/availability?latitude=42.360082&longitude=71.058880&party_size=10&radius=200&forward_minutes=180&backward_minutes=30&start_date_time=2017-03-13T20%3A00&include_unavailable=true', config)
+    return axios.get('https://platform.otqa.com/availability?latitude=42.360082&longitude=71.058880&party_size=10&radius=200&forward_minutes=180&backward_minutes=30&start_date_time=2017-03-13T20%3A00&include_unavailable=true', config)
         .then(function(response){
-            console.log(response.data); // ex.: { user: 'Your User'}
-            console.log(response.status); // ex.: 200
+            return response.data;
           }); 
 }
 
