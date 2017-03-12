@@ -34,7 +34,13 @@ module.exports.surpriseAssist = (event, context, cb) => {
 };
 
 module.exports.surpriseReservation = (event, context, cb) => {
-  surprises.getSurpriseReservation().then(r => {
+  
+  
+  // var event  = parser.parseEvent(event),
+  //     path   = event.path,
+  var    queryParams = event.queryStringParameters;
+
+  surprises.getSurpriseReservation(queryParams).then(r => {
     const response = {
       statusCode: 200,
       body: JSON.stringify(r),
