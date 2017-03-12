@@ -32,3 +32,16 @@ module.exports.surpriseAssist = (event, context, cb) => {
         cb(null, response);
     })
 };
+
+module.exports.surpriseReservation = (event, context, cb) => {
+  surprises.getSurpriseReservation().then(r => {
+    const response = {
+      statusCode: 200,
+      body: JSON.stringify(r),
+    };
+
+    cb(null, response);
+  }).catch(err => {
+    context.fail("Error: " + err);
+  });
+};
