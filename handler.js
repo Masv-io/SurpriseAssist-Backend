@@ -2,7 +2,7 @@
 
 // const uuid = require('uuid');
 const surprises = require('./lib/surprises');
-const parser = require('parser');
+const parser = require('./parser');
 
 module.exports.hello = (event, context, callback) => {
   console.log('test hello');
