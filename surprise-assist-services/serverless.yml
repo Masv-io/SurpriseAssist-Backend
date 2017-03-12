@@ -54,11 +54,18 @@ provider:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
+# The following are the plugins that are used by serverless project
+# below package is for 
+plugins:
+  - serverless-offline
+
 functions:
   hello:
     handler: handler.hello
   surpriseAssist:
     handler: handler.surpriseAssist
+  foo:
+    handler: handler.foo
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

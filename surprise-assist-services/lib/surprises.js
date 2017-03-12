@@ -19,8 +19,11 @@ module.exports.updateReservations = (event, context) => {
 };
 
 module.exports.getAllReservations = (event, context) => {
-    helper.getAllReservations(event.data).then(result => {
-        context.succeed({});
+    return helper.getAllReservations(event.data).then(data => {
+        context.succeed({
+            result: data
+        });
+        return data; 
     }).catch(err => {
         context.fail("Error: " + err);
     })
